@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  userid: 1
+  invited_users: 1
+  promo_code: 1
+  code_price: MyString
+  integer: MyString
+
+two:
+  userid: 1
+  invited_users: 1
+  promo_code: 1
+  code_price: MyString
+  integer: MyString

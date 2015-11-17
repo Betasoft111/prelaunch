@@ -1,0 +1,39 @@
+<div class="hero">
+    <div class="hero-inner">
+        <div class="l-hero">
+    <p class="large brandon">THE RAW OFFICE
+                    IS
+                COMING</p>
+    <!-- <p class="small brandon">eco-friendly office supplies for less<br>since like…right now.</p> -->
+
+
+</div>
+<!-- <div class="r-hero">
+    <h3>THE RAW OFFICE
+                    IS
+                COMING
+  <span>“eco-friendly office supplies for less”<br/>“since like…right now.”</span>
+
+            </h3>
+
+            </div> -->
+        </div>
+</div>
+
+<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+    <% if Rails.application.config.ended %>
+        <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
+        <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
+        <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
+        <p class="again brandon">Thank You Again!</p>
+    <% else %>
+        <div class="key"></div>
+        <!-- <p class="byline brandon">Be the first to know</p> -->
+        <%= form_for @user, :url => { :action => "create" } do |f| %>
+            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
+            <%= f.hidden_field :referral_code, value: @ref_code  %>
+            <!-- <input type="hidden" name="user[referral_code]" value="<%= @ref_code %>"> -->
+            <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
+        <% end %>
+    <% end %>
+</div>
