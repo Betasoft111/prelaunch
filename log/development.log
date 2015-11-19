@@ -31630,3 +31630,124 @@ Served asset /core.css - 304 Not Modified (0ms)
 
 Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-13 05:32:28 +0530
 Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-13 05:42:14 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dsfhd@rdhgd.dfhfd' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 50
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-13 05:42:14 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-13 05:42:14 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-13 05:42:15 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-13 05:42:15 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/key11%20(1).png" for 127.0.0.1 at 2015-11-13 05:42:15 +0530
+Served asset /refer/key11%20(1).png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-13 05:42:15 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 05:48:33 +0530
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-13 05:48:33 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-13 05:48:33 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-13 05:48:33 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-13 05:48:33 +0530
+Served asset /home/page1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home/key11.png" for 127.0.0.1 at 2015-11-13 05:48:33 +0530
+Served asset /home/key11.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 01:26:14 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 232ms (Views: 125.0ms | ActiveRecord: 98.3ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 01:26:14 +0530
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 01:26:14 +0530
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 01:26:15 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (23ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 01:26:15 +0530
+Served asset /home/page1.jpg - 304 Not Modified (35ms)
+
+
+Started GET "/assets/home/key11.png" for 127.0.0.1 at 2015-11-20 01:26:15 +0530
+Served asset /home/key11.png - 304 Not Modified (31ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 146ms (Views: 67.7ms | ActiveRecord: 70.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Served asset /core.css - 200 OK (2ms)
+
+
+Started GET "/assets/home/key11.png" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Served asset /home/key11.png - 200 OK (4ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Served asset /home/page1.jpg - 200 OK (3ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
