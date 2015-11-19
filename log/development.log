@@ -31751,3 +31751,228 @@ Served asset /favicon.ico - 200 OK (0ms)
 
 Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 01:33:13 +0530
 Served asset /favicon.ico - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 01:50:01 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Compiled reset.css  (0ms)  (pid 7271)
+Compiled core.css  (26ms)  (pid 7271)
+Completed 200 OK in 50ms (Views: 43.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 01:50:02 +0530
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 01:50:02 +0530
+Served asset /core.css - 200 OK (2ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 01:50:02 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 01:50:02 +0530
+Served asset /home/page1.jpg - 304 Not Modified (22ms)
+
+
+Started GET "/assets/home/key11.png" for 127.0.0.1 at 2015-11-20 01:50:02 +0530
+Served asset /home/key11.png - 304 Not Modified (22ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2015-11-20 01:50:07 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dP8wYjNbpiLm8omrGDExc5D0EAz00zuzOQcc0DC/XrQ=", "user"=>{"email"=>"randhir@betasoftsystems.com", "referral_code"=>""}, "commit"=>"Step Inside"}
+  [1m[36mUser Load (245.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+Redirected to http://localhost:3000/refer-a-friend
+Completed 302 Found in 344ms (ActiveRecord: 247.1ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 01:50:07 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+PG::UndefinedTable: ERROR:  relation "refers" does not exist
+LINE 5:              WHERE a.attrelid = '"refers"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"refers"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 7ms
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "refers" does not exist
+LINE 5:              WHERE a.attrelid = '"refers"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"refers"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/users_controller.rb:107:in `refer'
+
+
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 01:50:13 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+PG::UndefinedTable: ERROR:  relation "refers" does not exist
+LINE 5:              WHERE a.attrelid = '"refers"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"refers"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "refers" does not exist
+LINE 5:              WHERE a.attrelid = '"refers"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"refers"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/users_controller.rb:107:in `refer'
+
+
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (43.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130126215239)
+Migrating to DeviseCreateAdminUsers (20130127063936)
+Migrating to CreateAdminNotes (20130127063939)
+Migrating to MoveAdminNotesToComments (20130127063940)
+Migrating to CreateDelayedJobs (20130227185712)
+Migrating to CreateIpAddresses (20130312045541)
+Migrating to CreateRefers (20151112205421)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (430.9ms)[0m  [1mCREATE TABLE "refers" ("id" serial primary key, "userid" integer, "refer_by" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (26.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20151112205421')
+  [1m[36m (33.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePromocodes (20151112223449)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (94.0ms)[0m  [1mCREATE TABLE "promocodes" ("id" serial primary key, "userid" integer, "invited_users" integer, "promo_code" integer, "code_price" character varying(255), "integer" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20151112223449')
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+Migrating to ChangePromocodeFormatInPromoCodes (20151112233930)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (72.2ms)[0m  [1mALTER TABLE "promocodes" ALTER COLUMN "promo_code" TYPE character varying(255)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20151112233930')
+  [1m[36m (36.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.5ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 40ms (Views: 14.7ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Served asset /core.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refer/key11%20(1).png" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Served asset /refer/key11%20(1).png - 200 OK (3ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Served asset /refer/page2.jpg - 200 OK (3ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 01:50:50 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 01:50:56 +0530
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 01:50:56 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/key11%20(1).png" for 127.0.0.1 at 2015-11-20 01:51:02 +0530
+Served asset /refer/key11%20(1).png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Compiled core.css  (0ms)  (pid 7297)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Served asset /core.css - 200 OK (3ms)
+
+
+Started GET "/assets/refer/key11_1.png" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Served asset /refer/key11_1.png - 200 OK (5ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 01:52:50 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 01:52:53 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 01:52:53 +0530
+Served asset /reset.css - 304 Not Modified (0ms)

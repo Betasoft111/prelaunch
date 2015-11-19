@@ -141,7 +141,7 @@ html.home{
 }
 
 #home .form-wrap .key {
-    background: rgba(0, 0, 0, 0) url("/assets/home/key11.png") no-repeat scroll 0 0 / 261px 56px;
+    background: rgba(0, 0, 0, 0) url(home/key11.png) no-repeat scroll 0 0 / 261px 56px;
     height: 56px;
     margin: 0 auto 30px;
     width: 261px;
@@ -371,7 +371,7 @@ p.byline.brandon {
 }
 
 #refer .header .logo {
-  background: rgba(0, 0, 0, 0) url("http://localhost:3000/assets/refer/key11 (1).png") no-repeat scroll center center / 210px 40px;
+  background: rgba(0, 0, 0, 0) url(refer/key11_1.png) no-repeat scroll center center / 210px 40px;
   font-size: 0;
   font-weight: normal;
   height: 45px;
@@ -381,7 +381,7 @@ p.byline.brandon {
 }
 
 #refer .hero{
-	background: rgba(0, 0, 0, 0) url("/assets/refer/page2.jpg") no-repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0;
 	/*height: 391px;
 	overflow: hidden;*/
 	background-size: cover;
