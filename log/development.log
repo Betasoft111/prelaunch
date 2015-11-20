@@ -35138,3 +35138,263 @@ Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
 
 Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
 Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-21 02:05:51 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.7ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (2.7ms)
+Compiled core.css  (0ms)  (pid 11325)
+Completed 200 OK in 276ms (Views: 234.7ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:05:52 +0530
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:05:52 +0530
+Served asset /core.css - 200 OK (2ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-21 02:05:53 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (132ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-21 02:05:53 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (6695ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-21 02:06:01 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (460ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-21 02:06:06 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (90ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:09:35 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:09:36 +0530
+Served asset /core.css - 200 OK (33ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:09:53 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:19:59 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:19:59 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:19:59 +0530
+Served asset /core.css - 304 Not Modified (31ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:20:49 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:20:50 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:20:50 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:21:43 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:21:43 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:21:43 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:22:33 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:22:33 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:22:33 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-21 02:24:02 +0530
+Served asset /fonts/Helvetica.ttf - 200 OK (206ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:25:01 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:02 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:02 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:25:03 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:03 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:03 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-21 02:25:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (149.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 195ms (Views: 23.5ms | ActiveRecord: 150.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:40 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:40 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-21 02:25:40 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (211ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-21 02:25:41 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-21 02:25:41 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-21 02:25:41 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (20ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:25:43 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:44 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:25:44 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-21 02:25:44 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:27:01 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:27:01 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:27:01 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-21 02:27:01 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:27:28 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:27:28 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:27:28 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-21 02:27:28 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:27:51 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:27:51 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:27:51 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-21 02:27:51 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-21 02:28:05 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-21 02:28:05 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-21 02:28:05 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-21 02:28:06 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)

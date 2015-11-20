@@ -339,7 +339,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dd2fc', end
 
 #refer .header{
 /*	background: #074E6F;*/
-background: #15aad2;
+background: #4dd2f7 none repeat scroll 0 0;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -426,7 +426,7 @@ p.byline.brandon {
     line-height: 56px;
     margin: 237px 0 0;
     text-align: center;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #3e3e3e;
     text-transform: uppercase;
   
 }
