@@ -33408,3 +33408,1733 @@ Served asset /favicon.ico - 200 OK (0ms)
 
 Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 21:57:36 +0530
 Served asset /favicon.ico - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-20 22:06:24 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (1.2ms)
+Compiled reset.css  (0ms)  (pid 6815)
+Compiled core.css  (18ms)  (pid 6815)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:06:24 +0530
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:06:24 +0530
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:06:25 +0530
+Served asset /favicon.ico - 200 OK (2ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:06:25 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+Redirected to http://localhost:3000/refer-a-friend
+Filter chain halted as :skip_first_page rendered or redirected
+Completed 302 Found in 30ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.6ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 7.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:07 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (1ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:08 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:08 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:08 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.2ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.2ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:09 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:10 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:32 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.6ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (2.5ms)
+Compiled reset.css  (0ms)  (pid 7470)
+Compiled core.css  (3ms)  (pid 7470)
+Completed 200 OK in 46ms (Views: 18.9ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:32 +0530
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:32 +0530
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:32 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:32 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:32 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:32 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (2ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:47:33 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:47:34 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:47:34 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:47:34 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:47:34 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:48:14 +0530
+Served asset /favicon.ico - 200 OK (1ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:48:14 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:48:14 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:17 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:17 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:17 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:18 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:48:19 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:48:20 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 22:48:20 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 22:48:20 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 22:48:20 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:49:31 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:51:32 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:51:32 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:52:11 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:52:12 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:52:12 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:52:12 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:52:18 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 22:52:21 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (Called id for nil, which would mistakenly be 8 -- if you really wanted the id of nil, use object_id):
+  app/controllers/users_controller.rb:106:in `refer'
+
+
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 22:52:26 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:52:26 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:52:26 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 22:52:27 +0530
+Served asset /home/page1.jpg - 200 OK (2ms)
+
+
+Started GET "/assets/home/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:52:27 +0530
+Served asset /home/TRO_website_logo.png - 200 OK (2ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 22:52:27 +0530
+Served asset /fonts/Helvetica.ttf - 200 OK (12ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 22:55:13 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:55:13 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:55:13 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 22:55:13 +0530
+Served asset /home/page1.jpg - 200 OK (53ms)
+
+
+Started GET "/assets/home/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:55:13 +0530
+Served asset /home/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 22:55:41 +0530
+Served asset /home/page1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 22:56:19 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:56:19 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:56:19 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 22:56:19 +0530
+Served asset /home/page1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/home/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:56:19 +0530
+Served asset /home/TRO_website_logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 22:56:19 +0530
+Served asset /fonts/Helvetica.ttf - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 22:56:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 22:56:50 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 22:56:50 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 22:56:50 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 22:56:51 +0530
+Served asset /home/page1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 22:56:51 +0530
+Served asset /home/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:12 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.2ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:12 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:12 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:18:13 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:18:13 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:13 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:18:13 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:18:13 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 23:18:13 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:13 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:38 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:38 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:38 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.5ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (2.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 4.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.2ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.2ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.5ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:39 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (14.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 5.6ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.5ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (2.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (1.7ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 3.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (3.1ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 5.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.3ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.2ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1[0m
+  Rendered users/refer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/page2.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/TRO_website_logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /fonts/Helvetica.ttf - 200 OK (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/progress-bg.png - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /refer/progress-done.png - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:18:40 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"04yuSdnQ/8tYFXPIvnxmEF3RlvfWT1mjFlw4EWRniO0=", "user"=>{"email"=>"randhir@betasoftsystems.com", "referral_code"=>""}, "commit"=>"Step Inside"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+Redirected to http://localhost:3000/refer-a-friend
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Served asset /refer/TRO_website_logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Served asset /refer/page2.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Served asset /refer/progress-bg.png - 200 OK (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:19:01 +0530
+Served asset /refer/progress-done.png - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:05 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:05 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:05 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:06 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:19:07 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:19:07 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:19:07 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:19:07 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:10 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (Called id for nil, which would mistakenly be 8 -- if you really wanted the id of nil, use object_id):
+  app/controllers/users_controller.rb:106:in `refer'
+
+
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.2.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 23:19:14 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:14 +0530
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:14 +0530
+Served asset /core.css - 200 OK (0ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-20 23:19:14 +0530
+Served asset /home/page1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/home/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:19:14 +0530
+Served asset /home/TRO_website_logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-20 23:19:14 +0530
+Served asset /fonts/Helvetica.ttf - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-20 23:19:15 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cNDCxqJ1my6OVWoHJ1unifKXDySkUj4cNaQm+2uDJzk=", "user"=>{"email"=>"randhir@betasoftsystems.com", "referral_code"=>""}, "commit"=>"Step Inside"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1
+Redirected to http://localhost:3000/refer-a-friend
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Served asset /refer/TRO_website_logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Served asset /refer/page2.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Served asset /refer/progress-bg.png - 200 OK (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:19:17 +0530
+Served asset /refer/progress-done.png - 200 OK (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:20:55 +0530
+Served asset /refer/page2.jpg - 200 OK (99ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:02 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:21:02 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:21:02 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:21:03 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:21:03 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:21:03 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:21:03 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:05 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:21:05 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:21:05 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:21:05 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:21:05 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:21:05 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:21:05 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'randhir@betasoftsystems.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 1
+  Rendered users/refer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-20 23:21:06 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
