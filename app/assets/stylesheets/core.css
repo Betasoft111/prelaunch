@@ -141,7 +141,11 @@ html.home{
 }
 
 #home .form-wrap .key {
-    background: rgba(0, 0, 0, 0) url(home/key11.png) no-repeat scroll 0 0 / 261px 56px;
+    background-image: url(home/TRO_website_logo.png) ;
+    background-color: rgba(0, 0, 0, 0) ;
+    background-repeat: no-repeat;
+    background-size: 261px 56px;
+
     height: 56px;
     margin: 0 auto 30px;
     width: 261px;
@@ -371,7 +375,11 @@ p.byline.brandon {
 }
 
 #refer .header .logo {
-  background: rgba(0, 0, 0, 0) url(refer/key11_1.png) no-repeat scroll center center / 210px 40px;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: 210px 40px;
+  background-color:  rgba(0, 0, 0, 0) ;
+  background-image:url(refer/TRO_website_logo.png);
   font-size: 0;
   font-weight: normal;
   height: 45px;
