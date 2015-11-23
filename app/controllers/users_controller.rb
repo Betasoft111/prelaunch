@@ -24,19 +24,19 @@ class UsersController < ApplicationController
 
             cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
 
-            if !cur_ip
-                cur_ip = IpAddress.create(
-                    :address => request.env['HTTP_X_FORWARDED_FOR'],
-                    :count => 0
-                )
-            end
+            # if !cur_ip
+            #     cur_ip = IpAddress.create(
+            #         :address => request.env['HTTP_X_FORWARDED_FOR'],
+            #         :count => 0
+            #     )
+            # end
 
-            if cur_ip.count > 2
-                return redirect_to root_path
-            else
-                cur_ip.count = cur_ip.count + 1
-                cur_ip.save
-            end
+            # if cur_ip.count > 2
+            #     return redirect_to root_path
+            # else
+            #     cur_ip.count = cur_ip.count + 1
+            #     cur_ip.save
+            # end
 
             @user = User.new(:email => params[:user][:email])
           puts params[:user]
