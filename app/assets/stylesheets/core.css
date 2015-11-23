@@ -395,6 +395,17 @@ p.byline.brandon {
 	background-size: cover;
 		/*border-top: 1px solid #D2D1C8;*/
 }
+html[xmlns*=""]:root .selector{
+
+	background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0 !important; 
+	background-size: cover;
+
+}
+@supports (-webkit-appearance:none){
+
+	background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0 !important; 
+	background-size: cover;
+}
 
 #refer h2 {
     border-top: 1px solid #d2d1c8;
