@@ -53,31 +53,13 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 446px;
-	/*background: url(/assets/home/page1.jpg) center center no-repeat;*/
-	background-image: url("/assets/home/page1.jpg") !important;
-	background-size: 800px 533px !important;
+	background: url(/assets/home/page1.jpg) center center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
 }
-
-html[xmlns*=""]:root .selector{
-
-#home .hero{
-background: url("refer/page2.jpg") !important;
-  background-size: 800px 749px !important; /* or cover */
-}
-
-}
-@supports (-webkit-appearance:none){
-#home .hero{
-background: url("refer/page2.jpg") !important;
-  background-size: auto 749px !important; /* or cover */
-}
-}
-
 .r-hero h3 {
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
     border: 1px solid #3e3e3e;
@@ -407,28 +389,11 @@ p.byline.brandon {
 }
 
 #refer .hero{
-	background: url("refer/page2.jpg");
-  background-size: auto 749px; /* or cover */
-	/*background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0;
-	background: rgba(0, 0, 0, 0) url([refer/page2.jpg]) no-repeat scroll 0 0; */
+	background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0;
 	/*height: 391px;
 	overflow: hidden;*/
 	background-size: cover;
 		/*border-top: 1px solid #D2D1C8;*/
-}
-html[xmlns*=""]:root .selector{
-#refer .hero{
-background: url("refer/page2.jpg") !important;
-  background-size: auto 749px !important; /* or cover */
-}
-
-}
-@supports (-webkit-appearance:none){
-
-#refer .hero{
-background: url("refer/page2.jpg") !important;
-  background-size: auto 749px !important; /* or cover */
-}
 }
 
 #refer h2 {
