@@ -400,14 +400,14 @@ p.byline.brandon {
 }
 html[xmlns*=""]:root .selector{
 
-background: url("refer/page2.jpg");
-  background-size: auto 749px; /* or cover */
+background: url("refer/page2.jpg") !important;
+  background-size: auto 749px !important; /* or cover */
 
 }
 @supports (-webkit-appearance:none){
 
-	background: url("refer/page2.jpg");
-  background-size: auto 749px; /* or cover */
+	background: url("refer/page2.jpg") !important;
+  background-size: auto 749px !important; /* or cover */
 }
 
 #refer h2 {
