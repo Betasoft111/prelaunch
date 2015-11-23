@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 
             cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
 
+
             # if !cur_ip
             #     cur_ip = IpAddress.create(
             #         :address => request.env['HTTP_X_FORWARDED_FOR'],

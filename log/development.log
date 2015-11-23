@@ -36070,3 +36070,74 @@ Served asset /reset.css - 304 Not Modified (0ms)
 
 Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-23 22:39:44 +0530
 Served asset /core.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-24 02:16:24 +0530
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ramandeep@betasoftsystems.com' LIMIT 1[0m
+Redirected to http://localhost:3000/refer-a-friend
+Filter chain halted as :skip_first_page rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 02:16:24 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ramandeep@betasoftsystems.com' LIMIT 1
+  [1m[36mRefers Load (0.5ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 51[0m
+  Rendered users/refer.html.erb within layouts/application (2.9ms)
+Compiled reset.css  (0ms)  (pid 8984)
+Compiled core.css  (2ms)  (pid 8984)
+Completed 200 OK in 35ms (Views: 20.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 02:16:24 +0530
+Served asset /reset.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 02:16:24 +0530
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 02:16:24 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 02:16:25 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 02:16:25 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (20ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 02:16:25 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 02:16:25 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 02:16:25 +0530
+Served asset /favicon.ico - 200 OK (6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 02:16:25 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 02:16:27 +0530
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 02:16:27 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 02:16:37 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 02:16:39 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (0ms)

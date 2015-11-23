@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
             request.user_agent =~ /Mobile|webOS/
         end
     end
+    
 
     protected
 
