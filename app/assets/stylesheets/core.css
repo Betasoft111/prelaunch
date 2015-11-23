@@ -389,7 +389,8 @@ p.byline.brandon {
 }
 
 #refer .hero{
-	background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0;
+	/*background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0;*/
+	background: rgba(0, 0, 0, 0) url([refer/page2.jpg]) no-repeat scroll 0 0;
 	/*height: 391px;
 	overflow: hidden;*/
 	background-size: cover;
@@ -397,13 +398,13 @@ p.byline.brandon {
 }
 html[xmlns*=""]:root .selector{
 
-	background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0 !important; 
+	background: background: rgba(0, 0, 0, 0) url([refer/page2.jpg]) no-repeat scroll 0 0 !important; 
 	background-size: cover;
 
 }
 @supports (-webkit-appearance:none){
 
-	background: rgba(0, 0, 0, 0) url(refer/page2.jpg) no-repeat scroll 0 0 !important; 
+	background: background: rgba(0, 0, 0, 0) url([refer/page2.jpg]) no-repeat scroll 0 0 !important; 
 	background-size: cover;
 }
 
