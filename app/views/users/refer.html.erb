@@ -102,8 +102,11 @@
     $( document ).ready(function() { 
         $('#clickit').css('cursor','pointer');
         $(document).on('click', '#clickit',  function(event) { alert('hello');
-            $("#selectall").select(); 
-            $('#selectall').get(0).setSelectionRange(0,9999);
+            // $("#selectall").select(); 
+            // $('#selectall').get(0).setSelectionRange(0,9999);
+            var myInput = document.getElementById('selectall');
+            myInput.focus();
+            myInput.setSelectionRange(0, 9999);
         });
     });
 </script>

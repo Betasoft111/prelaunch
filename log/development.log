@@ -38580,3 +38580,44 @@ Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
 
 Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
 Served asset /refer/progress-done.png - 304 Not Modified (1ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 23:56:23 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Compiled core.css  (0ms)  (pid 4550)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 23:56:23 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 23:56:23 +0530
+Served asset /core.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 23:56:23 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 23:56:23 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (22ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 23:56:24 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 23:56:24 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 23:56:24 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 23:56:24 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
