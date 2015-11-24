@@ -177,14 +177,14 @@ html.home{
 #home .form-wrap .key{
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
 	background: url("home/TRO_website_logo.png") center center no-repeat !important;
-/*	background-size: auto 749px !important;*/
+	background-size: 261px 56px !important;
 }
 }
 @supports (-webkit-appearance:none) {
 	#home .form-wrap .key{
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
 	background: url("home/TRO_website_logo.png") center center no-repeat !important;
-/*	background-size: auto 749px !important;*/
+	background-size: 261px 56px !important;
 }
 }
 .r-hero h3 span {
