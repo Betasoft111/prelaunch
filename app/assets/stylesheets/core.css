@@ -49,6 +49,16 @@ html.home{
 	width: 1400px;
 	margin: 0 auto;
 }
+html[xmlns*=""]:root .selector  {
+
+#home .hero{
+	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
+	background: url("/assets/home/page1.jpg") center center no-repeat !important;
+
+	/*ended*/
+}
+
+}
 
 #home .hero{
 	width: 100%;
