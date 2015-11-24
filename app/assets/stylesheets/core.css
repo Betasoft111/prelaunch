@@ -60,8 +60,8 @@ html.home{
 	#home .hero{
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
 	background: url("/assets/home/page1.jpg") center center no-repeat !important;
-	background-size: 1350px 446px !important;
-	background: none !important;
+	background-size: 100% 446px !important;
+
 }
 }
 #home .hero{
