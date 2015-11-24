@@ -14,7 +14,8 @@
             <p class="why brandon">Don't leave your friends behind</p>
             <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
             <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn Raw Office products for<br>each friend who signs up.</p>
-            <div class="copy-link brandon"><%= root_url %>code/<%= @user.referral_code %></div>
+            <div id="textselect"  class="copy-link brandon"><input id="selectall"style="    width: 93%; border: none;" type="text" readonly="readonly" value="<%= root_url %>code/<%= @user.referral_code %>" /></div>
+            <input type="button"  id="clickit" value="Click To Select" id="select" class="submit brandon">
             <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
             <div class="social-links">
                 <a href="https://www.facebook.com/theraw0ffice/" class="fb" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -93,3 +94,13 @@
         <a class="policy brandon" href="privacy-policy" >Privacy Policy</a>
     </div>
 </div>
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+    $( document ).ready(function() { 
+        $('#clickit').click(function(){
+            $("#selectall").select(); 
+        });
+    });
+</script>
