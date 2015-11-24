@@ -426,6 +426,21 @@ p.byline.brandon {
   margin-top: 10px;
 }
 
+.selector:not(*:root)   {
+#refer .header .logo{
+	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
+	background: url("refer/TRO_website_logo.png") center center no-repeat !important;
+	background-size: 210px 40px !important;
+}
+}
+@supports (-webkit-appearance:none) {
+	#refer .header .logo{
+	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
+	background: url("refer/TRO_website_logo.png") center center no-repeat !important;
+	background-size: 210px 40px !important;
+
+}
+}
 #refer .hero{
 	background: rgba(0, 0, 0, 0) url("refer/page2.jpg") no-repeat scroll 0 0;
 	/*height: 391px;
