@@ -54,6 +54,7 @@ html[xmlns*=""]:root .selector  {
 #home .hero{
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
 	background: url("/assets/home/page1.jpg") center center no-repeat !important;
+	background-size: auto 749px !important;
 
 	/*ended*/
 }
@@ -65,6 +66,7 @@ html[xmlns*=""]:root .selector  {
 	height: 446px;
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
 	background: url("/assets/home/page1.jpg") center center no-repeat;
+	background-size: auto 749px !important;
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
