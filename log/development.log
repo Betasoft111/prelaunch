@@ -36141,3 +36141,330 @@ Served asset /refer/page2.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 02:16:39 +0530
 Served asset /refer/page2.jpg - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-24 20:12:21 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Compiled core.css  (0ms)  (pid 3382)
+Completed 200 OK in 227ms (Views: 151.1ms | ActiveRecord: 67.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:12:21 +0530
+Served asset /reset.css - 200 OK (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:12:21 +0530
+Served asset /core.css - 200 OK (3ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:12:21 +0530
+Served asset /fonts/Helvetica.ttf - 200 OK (22ms)
+
+
+Started GET "/assets/home/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:12:21 +0530
+Served asset /home/TRO_website_logo.png - 200 OK (32ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-24 20:12:21 +0530
+Served asset /home/page1.jpg - 200 OK (115ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-24 20:31:31 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:31:32 +0530
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:31:32 +0530
+Served asset /core.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:31:32 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:31:32 +0530
+Served asset /home/TRO_website_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home/page1.jpg" for 127.0.0.1 at 2015-11-24 20:31:32 +0530
+Served asset /home/page1.jpg - 304 Not Modified (22ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2015-11-24 20:31:44 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MO0u6I4rQzZdQjFrphBOrsyHQI4iE2OW7xtV3LyCPqo=", "user"=>{"email"=>"raman@gmail.com", "referral_code"=>""}, "commit"=>"Step Inside"}
+  [1m[36mUser Load (80.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mIpAddress Load (9.3ms)[0m  SELECT "ip_addresses".* FROM "ip_addresses" WHERE "ip_addresses"."address" IS NULL LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."referral_code" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."referral_code" IS NULL LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."referral_code" = '4d05c5d2e7' LIMIT 1[0m
+  [1m[35mSQL (52.8ms)[0m  INSERT INTO "users" ("created_at", "email", "referral_code", "referrer_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Tue, 24 Nov 2015 15:01:44 UTC +00:00], ["email", "raman@gmail.com"], ["referral_code", "4d05c5d2e7"], ["referrer_id", nil], ["updated_at", Tue, 24 Nov 2015 15:01:44 UTC +00:00]]
+  [1m[36mSQL (57.2ms)[0m  [1mINSERT INTO "delayed_jobs" ("attempts", "created_at", "failed_at", "handler", "last_error", "locked_at", "locked_by", "priority", "queue", "run_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["attempts", 0], ["created_at", Tue, 24 Nov 2015 15:01:44 UTC +00:00], ["failed_at", nil], ["handler", "--- !ruby/object:Delayed::PerformableMailer\nobject: !ruby/class 'UserMailer'\nmethod_name: :signup_email\nargs:\n- !ruby/object:User\n  attributes:\n    id: 54\n    email: raman@gmail.com\n    referral_code: 4d05c5d2e7\n    referrer_id: \n    created_at: &1 2015-11-24 15:01:44.542161207 Z\n    updated_at: *1\n"], ["last_error", nil], ["locked_at", nil], ["locked_by", nil], ["priority", 0], ["queue", nil], ["run_at", Tue, 24 Nov 2015 15:01:44 UTC +00:00], ["updated_at", Tue, 24 Nov 2015 15:01:44 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/refer-a-friend
+Completed 302 Found in 415ms (ActiveRecord: 222.2ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 20:31:44 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (56.5ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 87ms (Views: 5.5ms | ActiveRecord: 69.8ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:31:44 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:31:44 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:31:44 +0530
+Served asset /refer/TRO_website_logo.png - 200 OK (26ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 20:31:44 +0530
+Served asset /refer/progress-done.png - 200 OK (20ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 20:31:44 +0530
+Served asset /refer/page2.jpg - 200 OK (166ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 20:31:45 +0530
+Served asset /refer/progress-bg.png - 200 OK (5ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:31:45 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:32:52 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:32:52 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 20:33:23 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:33:23 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:33:23 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:33:23 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (21ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:35:41 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-24 20:35:44 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:45 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:45 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:35:45 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:35:45 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-24 20:35:48 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:48 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:48 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:35:48 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:35:48 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-24 20:35:51 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:51 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:51 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:35:51 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:35:51 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-24 20:35:54 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:54 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:35:54 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:35:54 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:35:54 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.5ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 15.1ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /core.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (32ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /favicon.ico - 200 OK (23ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 20:40:18 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2015-11-24 20:40:20 +0530
+Processing by UsersController#policy as HTML
+  Rendered users/policy.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 20:40:21 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 20:40:21 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 20:40:21 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 20:40:21 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
