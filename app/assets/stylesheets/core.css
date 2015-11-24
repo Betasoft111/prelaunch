@@ -49,24 +49,25 @@ html.home{
 	width: 1400px;
 	margin: 0 auto;
 }
-_::-moz-svg-foreign-content, :root .selector {}  {
-
+.selector:not(*:root)   {
 #home .hero{
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
 	background: url("/assets/home/page1.jpg") center center no-repeat !important;
 	background-size: auto 749px !important;
-
-	/*ended*/
 }
-
 }
-
+@supports (-webkit-appearance:none) {
+	#home .hero{
+	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
+	background: url("/assets/home/page1.jpg") center center no-repeat !important;
+	background-size: auto 749px !important;
+}
+}
 #home .hero{
 	width: 100%;
 	height: 446px;
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
 	background: url("/assets/home/page1.jpg") center center no-repeat;
-	background-size: auto 749px !important;
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
