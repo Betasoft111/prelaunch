@@ -8,7 +8,8 @@
 <div class="hero">
     <div class="page-content my-own clearfix">
         <div class="mammoth">
-            <span class="need brandon">BE SMART. BE RESPONSIBLE.<br>CHOOSE THE RAW OFFICE.</span>
+            <span class="need brandon">BE SMAR<span class="textdiv" style="letter-spacing: -4px;
+    margin-right: 5px;">T.</span> BE RESPONSIBLE.<br>CHOOSE THE RAW OFFICE.</span>
         </div>
         <div class="share-wrap">
             <p class="why brandon">Don't leave your friends behind</p>
@@ -99,7 +100,8 @@
 <%= javascript_include_tag "jquery.min.js" %>
 <script type="text/javascript">
     $( document ).ready(function() { 
-        $('#clickit').click(function(){
+        $('#clickit').css('cursor','pointer');
+        $(document).on('click', '#clickit',  function(event) {
             $("#selectall").select(); 
         });
     });

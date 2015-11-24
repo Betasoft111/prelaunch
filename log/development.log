@@ -38032,3 +38032,551 @@ Served asset /refer/progress-done.png - 304 Not Modified (0ms)
 
 Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 22:52:03 +0530
 Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:55:11 +0530
+Processing by UsersController#refer as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1
+  [1m[36mRefers Load (0.4ms)[0m  [1mSELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54[0m
+  Rendered users/refer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:55:11 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:55:11 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:55:11 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 22:55:12 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 22:55:12 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 22:55:12 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (26ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 22:55:12 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 22:55:12 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1
+Redirected to http://localhost:3000/refer-a-friend
+Filter chain halted as :skip_first_page rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (26ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 22:58:34 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:19 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:19 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:19 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:19 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /jquery.min.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.5ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (2.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.5ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 7.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.5ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.3ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (3ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (3.5ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (1.0ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /jquery.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.4ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 200 OK (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /core.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:20 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (32ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2015-11-24 22:59:21 +0530
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:26 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 22:59:26 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/refer-a-friend" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'raman@gmail.com' LIMIT 1[0m
+  [1m[35mRefers Load (0.2ms)[0m  SELECT "refers".* FROM "refers" WHERE "refers"."refer_by" = 54
+  Rendered users/refer.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/core.css?body=1" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /core.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /jquery.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/page2.jpg" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /refer/page2.jpg - 304 Not Modified (21ms)
+
+
+Started GET "/assets/refer/TRO_website_logo.png" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /refer/TRO_website_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/Helvetica.ttf" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /fonts/Helvetica.ttf - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-bg.png" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /refer/progress-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refer/progress-done.png" for 127.0.0.1 at 2015-11-24 23:40:11 +0530
+Served asset /refer/progress-done.png - 304 Not Modified (1ms)

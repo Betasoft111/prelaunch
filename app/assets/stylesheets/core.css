@@ -877,6 +877,25 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 
+#clickit {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4dd2fc+0,4dd2fc+44,00bff3+100 */
+background: #4dd2fc; /* Old browsers */
+background: -moz-linear-gradient(top, #4dd2fc 0%, #4dd2fc 44%, #00bff3 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4dd2fc), color-stop(44%,#4dd2fc), color-stop(100%,#00bff3)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #4dd2fc 0%,#4dd2fc 44%,#00bff3 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #4dd2fc 0%,#4dd2fc 44%,#00bff3 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #4dd2fc 0%,#4dd2fc 44%,#00bff3 100%); /* IE10+ */
+background: linear-gradient(to bottom, #4dd2fc 0%,#4dd2fc 44%,#00bff3 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dd2fc', endColorstr='#00bff3',GradientType=0 ); /* IE6-9 */
+border: medium none;
+border-radius: 5px;
+color: #fff;
+font-size: 14px;
+margin-top: 10px;
+padding: 5px;
+}
+
+
 
 
 
