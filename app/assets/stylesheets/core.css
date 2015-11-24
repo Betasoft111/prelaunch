@@ -49,7 +49,7 @@ html.home{
 	width: 1400px;
 	margin: 0 auto;
 }
-.selector:not(*:root)   {
+_::-moz-svg-foreign-content, :root .selector {}  {
 
 #home .hero{
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
