@@ -49,7 +49,7 @@ html.home{
 	width: 1400px;
 	margin: 0 auto;
 }
-html[xmlns*=""]:root .selector  {
+.selector:not(*:root)   {
 
 #home .hero{
 	/*background: rgba(0, 0, 0, 0) url("/assets/home/page1.jpg") no-repeat scroll 0 0;*/
